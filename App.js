@@ -38,8 +38,7 @@ class HomeScreen extends React.Component {
         })
     }
 
-    componentWillUnmount() {
-    }
+
 
     render() {
         let {navigate} = this.props.navigation;

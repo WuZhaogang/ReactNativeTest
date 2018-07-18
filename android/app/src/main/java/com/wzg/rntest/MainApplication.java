@@ -10,11 +10,11 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
+import com.rntest.BuildConfig;
 
 import java.util.Arrays;
 import java.util.List;
 
-import cn.jpush.reactnativejpush.JPushPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -36,8 +36,8 @@ public class MainApplication extends Application implements ReactApplication {
                     new MainReactPackage(),
                     new PickerPackage(),
                     new RNFetchBlobPackage(),
-                    mCommPackage,
-                    new JPushPackage(!BuildConfig.DEBUG, !BuildConfig.DEBUG)
+                    mCommPackage
+                    //new JPushPackage(!BuildConfig.DEBUG, !BuildConfig.DEBUG)
             );
         }
 
