@@ -4,6 +4,7 @@ import HomeScreen from "./HomeScreen";
 import SecondScreen from "./SecondScreen";
 import {Platform, StyleSheet} from 'react-native';
 import FetchUtils from '../http/FetchUtils'
+import {customStyle} from "../css/CustomStyle";
 
 export default class MainScreen extends React.Component {
 
